@@ -17,5 +17,10 @@ while j < len(grade_list):
     average += grade_list[j]
     j += 1
 
-print(f"Ás notas dos alunos foi: {grade_list}")
+print("Ás notas dos alunos foi:")
+j = 0
+while j < len(grade_list):
+    print(grade_list[j])
+    j += 1
+
 print(f"A média é: {average / N:.1f}")

@@ -12,14 +12,12 @@ while i < 10:
     i += 1
 
 j = 0
+greater_number = smaller_number = list_number[j]
 while j < len(list_number):
-    if j == 0:
-        greater_number = smaller_number = list_number[j]
-    else:
-        if list_number[j] > greater_number:
-            greater_number = list_number[j]
-        if list_number[j] < smaller_number:
-            smaller_number = list_number[j]
+    if list_number[j] > greater_number:
+        greater_number = list_number[j]
+    if list_number[j] < smaller_number:
+        smaller_number = list_number[j]
     sum_numbers += list_number[j]
     
     if list_number[j] % 2 != 0:

@@ -16,6 +16,12 @@ while j < len(list_numbers):
         numbers_odd *= list_numbers[j]
     j += 1
 
-print(f"A lista é: {list_numbers}")
+print(f"A lista é:")
+j = 0
+while j < len(list_numbers):
+    print(list_numbers[j], end=" ")
+    j += 1
+
+print()
 print(f"A soma dos números pares é: {numbers_even}")
 print(f"A multiplicação dos números ímpares é: {numbers_odd}")
