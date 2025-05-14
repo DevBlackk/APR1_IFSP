@@ -8,6 +8,6 @@ i = 0
 while i < len(texto):
     if texto[i] == letra:
         texto = texto[:i] + texto[i + 1:]
-        i = len(texto)  # Para sair do loop após remover a letra
+        i = len(texto)
     i += 1
 print(f"A string sem a letra {letra} é: {texto}")

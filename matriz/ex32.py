@@ -15,7 +15,7 @@ for i in range(M):
         if i == j:
             diagonal_elements = []
             diagonal_elements.append(matriz[i][j])
-            print(matriz[i][j], end = " ")
+            print(matriz[i][j], end=" ")
     sum_diagonal += matriz[i][i]
     print()
 
