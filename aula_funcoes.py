@@ -1,23 +1,52 @@
-num_1 = int(input("Digite um número: "))
-num_2 = int(input("Digite outro número: "))
+print("Calculadora")
 
-def soma(a, b):
-    return a + b
+def fun_soma():
+    n1 = float(input("Digite o primeiro número: "))
+    n2 = float(input("Digite o segundo número: "))
+    print(f"Resultado: {n1 + n2}")
 
-def subtrair(a, b):
-    return a - b
+def fun_subtrair():
+    n1 = float(input("Digite o primeiro número: "))
+    n2 = float(input("Digite o segundo número: "))
+    print(f"Resultado: {n1 - n2}")
 
-def multiplica(a, b):
-    return a * b
+def fun_multiplicar():
+    n1 = float(input("Digite o primeiro número: "))
+    n2 = float(input("Digite o segundo número: "))
+    print(f"Resultado: {n1 * n2}")
 
+def fun_dividir():
+    n1 = float(input("Digite o primeiro número: "))
+    n2 = float(input("Digite o segundo número: "))
+    if n2 != 0:
+        print(f"Resultado: {n1 / n2}")
+    else:
+        print("Erro: Divisão por zero!")
 
-def dividi(a, b):
-    return a / b
+def main():
+    opcao = 1
+    while opcao != 0:
+        print("\nEscolha a operação:")
+        print("1. Adição")
+        print("2. Subtração")
+        print("3. Multiplicação")
+        print("4. Divisão")
+        print("0. Sair")
+        
+        opcao = int(input("Escolha uma opção: "))
 
+        match opcao:
+            case 1: 
+                fun_soma()
+            case 2:
+                fun_subtrair()
+            case 3:
+                fun_multiplicar()
+            case 4:
+                fun_dividir()
+            case 0:
+                print("Programa encerrado!")
+            case _:
+                print("Opção inválida!")
 
-result_soma = soma(num_1, num_2)
-result_subtrair = subtrair(num_1, num_2)
-result_diviir = dividi(num_1, num_2)
-result_multiplicar = multiplica(num_1, num_2)
-
-print(f"O resuntado do é: {result_soma, result_subtrair, result_multiplicar, result_diviir}")
+main()
